@@ -24,5 +24,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install chrome, package and run test
+      run: |
+        sudo apt-get update 
+        sudo apt-get install google-chrome-stable
     - run: npm install
     - run: npm test
