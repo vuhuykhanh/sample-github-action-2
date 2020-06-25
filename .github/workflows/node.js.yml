@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   repository_dispatch:
-    types: auto-test
+    types: my-event
 jobs:
   build:
 
